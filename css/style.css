@@ -39,7 +39,7 @@ img{
     max-width: 100%;
 }
 
-.contenedor{
+.container{
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -87,7 +87,74 @@ h3{
     font-size: 3rem;
 }
 
+.navbar__link:last-of-type{
+    margin-right: 0;
+}
+
 .navbar__link:hover,
-.navbar__link--active:hover{
+.navbar__link--active{
     color: var(--secondary-color);
+}
+
+/**/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media(min-width: 738px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*----- Productos -----*/
+
+.producto{
+    background-color: var(--primary-color-dark);
+    padding: 1rem;
+}
+
+.producto__imagen{
+    width: 100%;
+}
+
+.producto__info{
+    
+}
+
+.producto__nombre{
+    font-size: 4rem;
+}
+
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--secondary-color);
+}
+
+.producto__nombre,
+.producto__precio{
+    font-family: var(--font-family);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+
+
+/* ----- Footer -----*/
+.footer{
+    background-color: var(--primary-color-dark);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__text{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 2.2rem;
 }
