@@ -1,0 +1,93 @@
+:root{
+    --primary-color: #9c27b0;
+    --primary-color-dark: #89119D;
+    --secondary-color: #FFCE00;
+    --secondary-color-dark: rgb(233,287,2);
+    --just-white: #fff;
+    --just-black: #000;
+
+    --font-family: 'Staatliches', cursive;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/*---Globales---*/
+body{
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--just-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,h2,h3{
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+/*----Header----*/
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0;
+}
+
+.navbar{
+    background-color: var(--primary-color-dark);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar__link{
+    font-family: var(--font-family);
+    color: var(--just-white);
+    font-size: 3rem;
+}
+
+.navbar__link:hover,
+.navbar__link--active:hover{
+    color: var(--secondary-color);
+}
