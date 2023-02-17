@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GymStore</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href=" index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navbar">
+        <a class="navbar__link" href="index.html">Tienda</a>
+        <a class="navbar__link navbar__link--active" href="about.html">Nosotros</a>
+    </nav>
+
+    <main class="container">
+        <h1>React JS</h1>
+
+        <div class="camisas">
+
+            <img src="img/3.jpg" alt="Imagen del Producto" class="camisas__imagen">
+
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero illum incidunt, at suscipit
+                    dolore.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo" name="" id="">
+                        <option disabled selected>---Seleccionar Talla---</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Gym Store - Todos los derechos Reservados @2024</p>
+    </footer>
+
+</body>
+
+</html>
